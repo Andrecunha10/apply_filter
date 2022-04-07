@@ -1,19 +1,28 @@
 
-import {Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+import { FormHotel } from "../../components/FormHotel";
 import { Layout } from "../../components/Layout";
+import styled from 'styled-components'
+
 
 export function HomeView() {
 
     return (
         <>
             <Layout>
-                <Container>
-                    <h4 className="text-md-left nt-4">Filtros</h4>
+                <StyledContainer>
+                    <div>
+                        <h4 className="text-md-left nt-4">Filtrar resultados por:</h4>
+                        <FormHotel />
+                    </div>
                     <Row>
-                        <h3>Hotels</h3>
+                        <h3>Hotéis</h3>
                     </Row>
-                </Container>
+                </StyledContainer>
             </Layout>
         </>
     )
 }
+
+const StyledContainer = styled(Container)`
+display: flex ;`

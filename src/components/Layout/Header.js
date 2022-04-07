@@ -9,7 +9,7 @@ export function Header() {
             <NavbarStyled expand="md">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
-                        <img src={Logo} alt="Logo Assista" height={50} width={60} />
+                        <img src={Logo} alt="Logo Hotel" height={50} width={60} />
                     </Navbar.Brand>
                 </Container>
             </NavbarStyled>
