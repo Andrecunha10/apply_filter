@@ -1,6 +1,11 @@
+import { Route, Routes } from "react-router-dom";
+import { HomeView } from "./views/Home";
+
 function App() {
   return (
-  <p>Hotel Acessível</p>
+    <Routes>
+      <Route path='/' element={<HomeView />} />
+    </Routes>
   );
 }
 
