@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 
-export function FormHotel() {
+export function FormHotel(props) {
+
     return (
         <>
             <Form>
@@ -20,7 +21,7 @@ export function FormHotel() {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Hotéis com acessibilidade" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="primary" onClick={() => props.filter(2) }>
                     Aplicar Filtros
                 </Button>
             </Form>
